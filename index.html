@@ -82,6 +82,9 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
         <!-- Embed Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -90,11 +93,57 @@
             rel="stylesheet"
         />
 
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header header__fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="/">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="Lucy"
+                            class="logo"
+                        />
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">About</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">
+                                    Services & Rates
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Reviews</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">
+                                    Contacts us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Sign in</a>
+                        <a href="#!" class="header-action__btn btn">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>

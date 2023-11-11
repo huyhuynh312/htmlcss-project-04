@@ -3,7 +3,8 @@
 }
 
 :root {
-    --header-font: "Sora", sans-serif;
+    --primary-color: #ff5b2e;
+    --second-primary-color: #000958;
 }
 
 html,
@@ -19,4 +20,99 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5.h6 {
+    font-family: "Sora", sans-serif;
+}
+
+a,
+input,
+textarea,
+select,
+button,
+article {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: 1440px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    color: var(--second-primary-color);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 9, 88, 0.7);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+}
+
+.header.header__fixed {
+    position: sticky;
+    top: -8px;
+    z-index: 1;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link,
+.header-action__link {
+    padding: 8px 18px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.navbar__link:hover,
+.header-action__link:hover {
+    color: var(--second-primary-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 117px;
+}
+
+.header-action__btn:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }

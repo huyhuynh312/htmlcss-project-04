@@ -20,6 +20,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
 
 /* Common */
@@ -48,14 +49,16 @@ article {
 }
 
 .container {
-    width: 1440px;
+    width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
 
 .btn {
     --height: 56px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-width: 130px;
     height: var(--height);
     line-height: var(--height);
@@ -69,11 +72,29 @@ article {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn--primary {
+    color: #fff;
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}
+
+.btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
 }
 
 /* Header */
 .header {
-    padding: 26px 0;
+    padding: 26px 0 13px;
 }
 
 .header.header__fixed {
@@ -115,4 +136,182 @@ article {
 .header-action__btn:hover {
     color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+    padding: 77px 0;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 120px;
+}
+
+/* Hero media */
+.hero__media {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 94px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    border: 3px solid #fff;
+    background: linear-gradient(180deg, #ffa78d 0%, #ff8c60 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__decor-left {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__decor-right {
+    top: 17px;
+    right: -43px;
+}
+
+.hero__img-wrap-small {
+    margin: 0 0 -58px -23px;
+    width: 186px;
+    height: 244px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    background: linear-gradient(206deg, #faa7ad 4.68%, #e87f8a 98.09%);
+    box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
+}
+
+/* Hero list */
+.hero__list {
+    position: absolute;
+    left: 129px;
+    bottom: 0;
+    width: 250px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-item__img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #fec23f;
+}
+
+.hero-item:nth-of-type(2) .hero-item__img {
+    background: #c6e2fa;
+}
+
+.hero-item__info {
+    margin-left: 10px;
+}
+
+.hero-item__title {
+    color: #181e52;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-item__skeleton,
+.hero-item__skeleton--long {
+    border-radius: 10px;
+    opacity: 0.08;
+    background: var(--second-primary-color);
+}
+
+.hero-item__skeleton {
+    margin-top: 7px;
+    width: 39px;
+    height: 4px;
+}
+
+.hero-item__skeleton--long {
+    margin-top: 6px;
+    width: 118px;
+    height: 4px;
+}
+
+.hero-item__separate {
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 999px;
+}
+
+/* Hero content */
+.hero__heading {
+    width: 517px;
+    font-family: Sora;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--second-primary-color);
+}
+
+.hero__desc {
+    margin-top: 24px;
+    width: 391px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    --height: 60px;
+    font-size: 1.6rem;
+    min-width: 190px;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero__cta-link {
+    margin-left: 24px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: underline;
+    color: var(--second-primary-color);
+}
+
+.hero__cta-link:hover {
+    color: var(--primary-color);
 }

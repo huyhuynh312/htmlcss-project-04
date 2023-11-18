@@ -756,3 +756,118 @@ article {
     opacity: 0.6;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
+
+/* Staff */
+.staff {
+    padding: 130px 0;
+}
+
+/* Staff top */
+.staff__top {
+    text-align: center;
+}
+
+.section-heading {
+    margin-top: 15px;
+}
+
+/* Staff bottom */
+.staff__bottom {
+    margin-top: 45px;
+}
+
+.staff__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff__item {
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.staff__item-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.staff__item-img {
+    display: block;
+    width: calc(100% - 32px);
+    border-radius: 130px;
+    z-index: 1;
+}
+
+.staff__item-decor {
+    position: absolute;
+    width: 100%;
+}
+
+.staff__item:nth-child(odd) .staff__item-decor {
+    bottom: -5px;
+    right: 0;
+}
+
+.staff__item:nth-child(even) .staff__item-decor {
+    top: 19px;
+    right: 0;
+}
+
+.staff__item-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: calc(100% - 32px);
+    height: 94%;
+    border-radius: 130px;
+    transform: translateX(-50%);
+}
+
+.staff__item:nth-child(1) .staff__item-bg {
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff__item:nth-child(2) .staff__item-bg {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__item:nth-child(3) .staff__item-bg {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff__item:nth-child(4) .staff__item-bg {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff__item-desc {
+    margin-top: 34px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.staff__item-name {
+    margin-top: 14px;
+    color: #000958;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__btn-wrap {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff__btn {
+    min-width: 193px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    border-color: currentColor;
+    margin: 0 auto;
+}

@@ -116,15 +116,15 @@ article {
 
 .section-label {
     color: #5e6085;
-    font-family: Sora, sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1;
 }
 
 .service-title {
-    font-family: Sora, sans-serif;
-    font-size: 22px;
+    font-family: "Sora", sans-serif;
+    font-size: 2.2rem;
     font-weight: 600;
     line-height: 1;
     color: var(--second-primary-color);
@@ -1024,6 +1024,14 @@ article {
     column-gap: 44px;
 }
 
+.review__content {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
 /* Review control */
 .review__control {
     display: flex;
@@ -1036,6 +1044,11 @@ article {
     background: transparent;
     border-radius: 50%;
     border: 1.5px solid #ffd1c4;
+    transition: ease 0.25s;
+}
+
+.review__control:nth-of-type(2) {
+    margin-left: auto;
 }
 
 .review__control:hover {
@@ -1051,6 +1064,8 @@ article {
     display: flex;
     align-items: center;
     column-gap: 115px;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .review__item-media {
@@ -1126,6 +1141,7 @@ article {
     border-radius: 50%;
     border: 1px solid var(--primary-color);
     background: transparent;
+    transition: ease 0.25s;
 }
 
 .review__dot:hover {
@@ -1137,4 +1153,90 @@ article {
     width: 24px;
     background: var(--primary-color);
     border-radius: 4px;
+}
+
+/* Blog */
+.blog {
+    padding: 77px 0 130px;
+}
+
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__btn-wrap {
+    width: 423px;
+}
+
+.blog__desc {
+    margin-top: auto;
+    width: 350px;
+}
+
+.blog__btn {
+    margin-top: 24px;
+    min-width: 182px;
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog__item {
+    width: 358px;
+    border-radius: 24px;
+}
+
+.blog__item-img-wrap {
+    position: relative;
+    padding: 24px 0 0 36px;
+    background: #90ccff;
+    border-radius: 24px;
+}
+
+.blog__item:nth-child(2) .blog__item-img-wrap {
+    background: #ff997e;
+}
+
+.blog__item:nth-child(3) .blog__item-img-wrap {
+    background: #5bd6e2;
+}
+
+.blog__item-time {
+    color: #fff;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.21;
+}
+
+.blog__item-thumb {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+}
+
+.blog__item-heading {
+    margin-top: 28px;
+    display: block;
+    color: var(--second-primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.blog__item-desc {
+    width: 356px;
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
 }
